@@ -21,6 +21,19 @@
     "eslint-plugin-prettier": "3.1.4",
     "eslint-plugin-react": "7.21.5",
     "eslint-plugin-react-hooks": "4.2.0",
+    "husky": ">=4",
+    "lint-staged": ">=10",
     "prettier": "2.1.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*/*.{js,css,json}": [
+      "eslint --cache --fix",
+      "prettier --write"
+    ]
   }
 }
