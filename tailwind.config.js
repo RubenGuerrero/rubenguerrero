@@ -1,9 +1,5 @@
 module.exports = {
-  future: {
-    // removeDeprecatedGapUtilities: true,
-    // purgeLayersByDefault: true,
-  },
-  purge: ['./pages/**/.js', './modules/**/.js'],
+  purge: ['./components/**/*.js', './pages/**/*.js'],
   theme: {
     extend: {},
   },
