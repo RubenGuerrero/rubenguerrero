@@ -33,8 +33,7 @@
   "lint-staged": {
     "*/*.{js,css,json}": [
       "eslint --cache --fix",
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ]
   }
 }
