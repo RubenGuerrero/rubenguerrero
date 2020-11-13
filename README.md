@@ -2,7 +2,7 @@
 
 My name is Rubén Guerrero and I'm a Frontend Engineer. I'm from Spain living in Madrid and currently working at Ontruck.
 
-### 🚀 Frontend Skills
+### 🚀 &nbsp;Frontend Skills
 <a href="https://github.com/RubenGuerrero/rubenguerrero">
   <img align="center" src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black" />
 </a>
@@ -25,7 +25,7 @@ My name is Rubén Guerrero and I'm a Frontend Engineer. I'm from Spain living in
   <img align="center" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
 </a>
 
-### 🚀 Backend Skills
+###  🚀 &nbsp; Backend Skills
 <a href="https://github.com/RubenGuerrero/rubenguerrero">
   <img align="center" src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white" />
 </a>
@@ -37,7 +37,7 @@ My name is Rubén Guerrero and I'm a Frontend Engineer. I'm from Spain living in
 </a>
 
 
-### &#x1f4c8; GitHub Stats
+### &#x1f4c8; &nbsp; GitHub Stats
 <a href="https://github.com/RubenGuerrero/rubenguerrero">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rubenguerrero&layout=compact" />
 </a>
