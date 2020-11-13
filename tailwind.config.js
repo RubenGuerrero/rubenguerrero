@@ -1,7 +1,11 @@
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: 'Roboto, sans-serif',
+      },
+    },
   },
   variants: {},
   plugins: [],
