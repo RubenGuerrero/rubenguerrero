@@ -1,9 +1,34 @@
-# Hello world! <img src="https://raw.githubusercontent.com/RubenGuerrero/rubenguerrero/master/wave.gif" width="30px">
+# Hello world! <img src="https://raw.githubusercontent.com/RubenGuerrero/rubenguerrero/main/wave.gif" width="30px">
 
 My name is Rubén Guerrero and I'm a Frontend Engineer. I'm from Spain living in Madrid and currently working at Ontruck.
 
+### 🚀 Skills
+<a href="https://github.com/RubenGuerrero/rubenguerrero">
+  <img align="center" src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black" />
+</a>
+<a href="https://github.com/RubenGuerrero/rubenguerrero">
+  <img align="center" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+</a>
+<a href="https://github.com/RubenGuerrero/rubenguerrero">
+  <img align="center" src="https://img.shields.io/badge/redux%20-%23593d88.svg?&style=for-the-badge&logo=redux&logoColor=white" />
+</a>
+<a href="https://github.com/RubenGuerrero/rubenguerrero">
+  <img align="center" src="https://img.shields.io/badge/react_router%20-CA4245.svg?&style=for-the-badge&logo=react-router&logoColor=white" />
+</a>
+<a href="https://github.com/RubenGuerrero/rubenguerrero">
+  <img align="center" src="https://img.shields.io/badge/styled_components%20-DB7093.svg?&style=for-the-badge&logo=styled-components&logoColor=white" />
+</a>
+<a href="https://github.com/RubenGuerrero/rubenguerrero">
+  <img align="center" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white" />
+</a>
+<a href="https://github.com/RubenGuerrero/rubenguerrero">
+  <img align="center" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white" />
+</a>
+<a href="https://github.com/RubenGuerrero/rubenguerrero">
+  <img align="center" src="https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white" />
+</a>
 
-## &#x1f4c8; GitHub Stats
+### &#x1f4c8; GitHub Stats
 <a href="https://github.com/RubenGuerrero/rubenguerrero">
   <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=rubenguerrero&layout=compact" />
 </a>
