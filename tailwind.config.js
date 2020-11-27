@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors');
+
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
   theme: {
@@ -5,8 +7,12 @@ module.exports = {
       fontFamily: {
         sans: 'Roboto, sans-serif',
       },
+      colors: {
+        emerald: colors.emerald,
+      },
     },
   },
+  darkMode: 'media',
   variants: {},
   plugins: [],
 };
