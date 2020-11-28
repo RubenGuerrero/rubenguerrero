@@ -1,10 +1,14 @@
 import Link from 'next/link';
+import Head from 'next/head';
 
 import { Header } from 'components/Header';
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Rubén Guerrero - Senior Software Engineer</title>
+      </Head>
       <Header />
       <div className="mx-auto max-w-screen-xl">
         <div className="relative pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
