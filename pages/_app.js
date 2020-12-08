@@ -1,9 +1,23 @@
-import PropTypes from 'prop-types';
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 import Head from 'next/head';
 
-import '../styles/tailwind.css';
+import * as gtag from 'lib/gtag';
+
+import 'styles/tailwind.css';
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      gtag.pageView(url);
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <>
       <Head>
@@ -19,10 +33,5 @@ function MyApp({ Component, pageProps }) {
     </>
   );
 }
-
-MyApp.propTypes = {
-  Component: PropTypes.any,
-  pageProps: PropTypes.any,
-};
 
 export default MyApp;
