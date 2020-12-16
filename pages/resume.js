@@ -16,7 +16,7 @@ export default function Resume() {
       </Head>
       <BaseLayout>
         <Header />
-        <div className="mx-auto px-3 max-w-prose">
+        <div className="mx-auto px-3 max-w-prose antialiased">
           <div className="mb-5 mt-4 mx-auto text-center">
             <div className="flex justify-center">
               <div>
@@ -33,11 +33,16 @@ export default function Resume() {
             <div className="ml-2">
               <p className="pt-1 font-bold">Rubén Guerrero Sánchez</p>
               <p className="mb-2 text-gray-600 text-sm">Senior Software Engineer</p>
-              <div className="text-sm">
-                <a href="mailto:yo@rubenguerrero.com" className="block mb-2 hover:underline">
-                  yo@rubenguerrero.com
-                </a>
-                <a href={whatsappHref} className="block hover:underline">
+              <div className="text-center text-sm">
+                <div>
+                  <a
+                    href="mailto:yo@rubenguerrero.com"
+                    className="inline-block align-middle h-8 hover:underline leading-none"
+                  >
+                    yo@rubenguerrero.com
+                  </a>
+                </div>
+                <a href={whatsappHref} className="inline-block hover:underline">
                   +34 677 17 65 92
                 </a>
               </div>
