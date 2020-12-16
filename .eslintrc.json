@@ -17,15 +17,8 @@
     "amd": true,
     "node": true
   },
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:prettier/recommended",
-    "plugin:tailwind/recommended"
-  ],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
   "rules": {
-    "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
