@@ -6,6 +6,10 @@ import * as gtag from 'lib/gtag';
 
 import 'styles/tailwind.css';
 
+export function reportWebVitals(metric) {
+  console.log(metric);
+}
+
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   useEffect(() => {
