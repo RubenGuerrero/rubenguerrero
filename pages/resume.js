@@ -23,6 +23,7 @@ export default function Resume() {
                 <Image
                   src="/avatar.png"
                   className="w-24 rounded-full"
+                  layout="fixed"
                   alt="Rubén Guerrero"
                   width={96}
                   height={96}
