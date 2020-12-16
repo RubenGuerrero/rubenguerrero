@@ -6,9 +6,8 @@ import * as gtag from 'lib/gtag';
 
 import 'styles/tailwind.css';
 
-export function reportWebVitals(metric) {
-  console.log(metric);
-}
+const description =
+  'Software Engineer with +9 years of experience in web development. Worked on multiple types of companies, multiple types of business, and use cases.';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
@@ -27,11 +26,8 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta property="og:title" content="Rubén Guerrero - Senior Software Engineer" />
-        <meta
-          property="og:description"
-          content="Software Engineer with +9 years of experience in web development. Worked on multiple
-            types of companies, multiple types of business, and use cases."
-        />
+        <meta property="og:description" content={description} />
+        <meta name="description" content={description} />
       </Head>
       <Component {...pageProps} />
     </>

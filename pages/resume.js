@@ -33,7 +33,7 @@ export default function Resume() {
               <p className="pt-1 font-bold">Rubén Guerrero Sánchez</p>
               <p className="mb-2 text-gray-600 text-sm">Senior Software Engineer</p>
               <div className="text-sm">
-                <a href="mailto:yo@rubenguerrero.com" className="block hover:underline">
+                <a href="mailto:yo@rubenguerrero.com" className="block mb-2 hover:underline">
                   yo@rubenguerrero.com
                 </a>
                 <a href={whatsappHref} className="block hover:underline">
