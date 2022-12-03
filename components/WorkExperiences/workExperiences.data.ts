@@ -3,7 +3,7 @@ import { WorkExperience } from './WorkExperience.inteface';
 const workExperiences: WorkExperience[] = [
   {
     company: 'Freelance',
-    imagePath: '/avatar.png',
+    imagePath: 'avatar.png',
     imageColor: '#c2ac88',
     position: 'Software Engineer',
     startDate: '2008-01-01',
@@ -13,7 +13,7 @@ const workExperiences: WorkExperience[] = [
   },
   {
     company: 'Boopos',
-    imagePath: '/boopos.png',
+    imagePath: 'boopos.png',
     imageColor: '#000',
     position: 'Tech Lead',
     startDate: '2022-05',
@@ -24,7 +24,7 @@ const workExperiences: WorkExperience[] = [
   },
   {
     company: 'Clinpify',
-    imagePath: '/clinpify.png',
+    imagePath: 'clinpify.png',
     imageColor: '#1d00fd',
     position: 'CPO & Co-Founder',
     startDate: '2021-01',
@@ -34,7 +34,7 @@ const workExperiences: WorkExperience[] = [
   },
   {
     company: 'Ontruck',
-    imagePath: '/ontruck.png',
+    imagePath: 'ontruck.png',
     imageColor: '#0040cc',
     position: 'Senior Staff Software Engineer',
     startDate: '2016-06',
@@ -51,7 +51,7 @@ I am employee #5 of Ontruck, so I have been working since almost the beginning o
     company: 'Idealista',
     position: 'Frontend Engineer',
     imageColor: '#e1f56f',
-    imagePath: '/idealista.png',
+    imagePath: 'idealista.png',
     startDate: '2014-02',
     endDate: '2016-06',
     description: `idealista.com is the leading real estate portal in Spain. I worked on the revamp of almost all the public website, refactoring and recreating almost all the pages from scratch.
@@ -62,7 +62,7 @@ Also, I worked on building the internal applications of the company. I was mainl
   {
     company: 'Redbility',
     position: 'Frontend Engineer',
-    imagePath: '/redbility.png',
+    imagePath: 'redbility.png',
     imageColor: '#fe014f',
     startDate: '2013-12',
     endDate: '2014-02',
@@ -75,7 +75,7 @@ The designs were very demanding in terms of interactions and user experience, wi
     company: 'Peoplecall',
     position: 'Frontend Engineer',
     imageColor: '#000000',
-    imagePath: '/peoplecall.png',
+    imagePath: 'peoplecall.png',
     startDate: '2012-07',
     endDate: '2013-12',
     description: `Peoplecall is a telco company. I was working on building the internal websites and applications of the company.

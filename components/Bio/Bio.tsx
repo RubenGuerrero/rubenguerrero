@@ -1,13 +1,15 @@
 import Image from 'next/image';
+import avatar from 'public/avatar.png';
 
 export const Bio = () => (
   <div className='mb-5 mt-4 mx-auto text-center md:sticky md:top-5'>
     <div className='flex justify-center'>
       <div>
         <Image
-          src='/avatar.png'
+          src={avatar}
           className='w-24 rounded-full'
           alt='Rubén Guerrero'
+          placeholder="blur"
           width={96}
           height={96}
         />

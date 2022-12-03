@@ -9,7 +9,7 @@ export const KeySkills = () => (
       'Humbleness',
       'Accountability',
       'Hands-on',
-      'Project management',
+      'Management',
       'Attention to detail',
     ]}
   />

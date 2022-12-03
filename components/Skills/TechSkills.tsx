@@ -5,13 +5,12 @@ export const TechSkills = () => (
     title="Tech Skills"
     skills={[
       'React',
+      'TypeScript',
       'NodeJS',
-      'Javascript',
       'Frontend tooling',
       'UI/UX Skills',
       'Testing',
       'Software Architecture',
-      'Django',
     ]}
   />
 );
