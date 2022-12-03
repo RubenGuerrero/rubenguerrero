@@ -17,7 +17,7 @@ export const Bio = () => (
       </div>
     </div>
     <div className="pt-1 font-bold">Rubén Guerrero Sánchez</div>
-    <div className="mb-2 text-gray-600 text-sm">Senior Software Engineer</div>
+    <div className="mb-2 text-gray-600 dark:text-gray-500 text-sm">Senior Software Engineer</div>
     <div className="text-center text-sm">
       <a
         href="mailto:yo@rubenguerrero.com"

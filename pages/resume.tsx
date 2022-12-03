@@ -1,7 +1,7 @@
 import { Bio, BioSummary } from 'components/Bio';
-import { KeySkills, TechSkills } from 'components/Skills';
 import { Header } from 'components/Header';
 import { BaseLayout } from 'components/Layouts';
+import { KeySkills, TechSkills } from 'components/Skills';
 import { WorkExperiences } from 'components/WorkExperiences';
 import Head from 'next/head';
 
@@ -9,7 +9,7 @@ export default function Resume() {
   return (
     <>
       <Head>
-        <title>CV - Rubén Guerrero - Senior Software Engineer</title>
+        <title>Rubén Guerrero - Software Engineer</title>
       </Head>
       <BaseLayout>
         <Header />
@@ -24,6 +24,12 @@ export default function Resume() {
 
             <WorkExperiences />
           </div>
+        </div>
+        <div className="p-8 text-sm text-gray-400 text-center">
+          Made with ❤️ -{' '}
+          <a href="https://github.com/RubenGuerrero/rubenguerrero" target="_blank" rel="noreferrer">
+            See source code
+          </a>
         </div>
       </BaseLayout>
     </>

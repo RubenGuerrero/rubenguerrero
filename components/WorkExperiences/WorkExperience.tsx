@@ -24,7 +24,7 @@ const WorkExperience = ({ work, nextImageColor }: WorkExperienceProps) => (
         />
       ) : (
         <div
-          className="w-8 h-8 rounded-full flex items-center justify-center font-bold"
+          className="w-8 h-8 rounded-full flex items-center justify-center font-bold text-black"
           style={{ backgroundColor: work.imageColor }}
         >
           {work.company[0]}
@@ -32,14 +32,15 @@ const WorkExperience = ({ work, nextImageColor }: WorkExperienceProps) => (
       )}
     </div>
     <div className="flex-1">
-      <div className="text-gray-700 text-lg font-bold">
+      <div className="text-gray-700 dark:text-gray-200 text-lg font-bold">
         {work.company} <span className="text-gray-300">·</span>{' '}
-        <span className="text-gray-500">{work.position}</span>
+        <span className="text-gray-500 dark:text-gray-200">{work.position}</span>
       </div>
-      <div className="mb-2 text-gray-500 text-sm">
+      <div className="mb-2 text-gray-500 dark:text-gray-500 text-sm">
         {renderDate(work.startDate, work.endDate)} ·{' '}
         {renderDateAmount(work.startDate, work.endDate, work.showPlusDate)}
       </div>
+      <div className="text-gray-900 dark:text-gray-200">
       <ReactMarkdown
         components={{
           p: (props) => <p className="pb-4" {...props} />,
@@ -48,6 +49,7 @@ const WorkExperience = ({ work, nextImageColor }: WorkExperienceProps) => (
       >
         {work.description}
       </ReactMarkdown>
+      </div>
 
       {!!work.stack?.length && (
         <p className="text-gray-500 italic text-sm">Tech & Tools: {work.stack.join(', ')}</p>

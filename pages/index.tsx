@@ -10,14 +10,14 @@ export default function Home() {
       </Head>
       <Header />
       <div className="mx-auto max-w-screen-xl">
-        <div className="relative pb-8 bg-white sm:pb-16 md:pb-20 lg:pb-28 lg:w-full lg:max-w-2xl xl:pb-32">
+        <div className="relative pb-8 sm:pb-16 md:pb-20 lg:pb-28 lg:w-full lg:max-w-2xl xl:pb-32">
           <main className="mt-10 mx-auto px-4 max-w-screen-xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h2 className="text-gray-900 text-4xl font-extrabold tracking-tight leading-10 sm:text-5xl sm:leading-none md:text-6xl">
+              <h2 className="text-gray-900 dark:text-gray-100 text-4xl font-extrabold tracking-tight leading-10 sm:text-5xl sm:leading-none md:text-6xl">
                 Rubén Guerrero <br className="xl:hidden" />
                 <span className="text-emerald-600">Software Engineer</span>
               </h2>
-              <p className="mt-3 text-gray-500 text-base sm:mt-5 sm:mx-auto sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
+              <p className="mt-3 text-gray-500 dark:text-gray-400 text-base sm:mt-5 sm:mx-auto sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                 Hello there, you can check my Resumè clicking on this awesome button!
               </p>
               <div className="mt-5 sm:flex sm:justify-center sm:mt-8 lg:justify-start">
