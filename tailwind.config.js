@@ -1,18 +1,11 @@
-const colors = require('tailwindcss/colors');
-
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./components/**/*.js', './pages/**/*.js'],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: 'Roboto, sans-serif',
-      },
-      colors: {
-        emerald: colors.emerald,
-      },
-    },
+    extend: {},
   },
-  darkMode: 'media',
-  variants: {},
   plugins: [],
-};
+}

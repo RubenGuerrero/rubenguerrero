@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 import * as gtag from 'lib/gtag';
 
-import 'styles/tailwind.css';
+import 'styles/globals.css';
 import { AppProps } from 'next/app';
 
 const description =
