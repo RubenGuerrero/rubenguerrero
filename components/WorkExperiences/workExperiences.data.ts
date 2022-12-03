@@ -4,7 +4,7 @@ const workExperiences: WorkExperience[] = [
   {
     company: 'Freelance',
     imagePath: 'avatar.png',
-    imageColor: '#c2ac88',
+    imageColor: '#306a55',
     position: 'Software Engineer',
     startDate: '2008-01-01',
     endDate: null,
@@ -74,8 +74,7 @@ The designs were very demanding in terms of interactions and user experience, wi
   {
     company: 'Peoplecall',
     position: 'Frontend Engineer',
-    imageColor: '#000000',
-    imagePath: 'peoplecall.png',
+    imageColor: '#de5332',
     startDate: '2012-07',
     endDate: '2013-12',
     description: `Peoplecall is a telco company. I was working on building the internal websites and applications of the company.
