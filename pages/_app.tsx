@@ -4,7 +4,7 @@ import Head from 'next/head';
 import 'styles/globals.css';
 import { createClient, JitsuProvider, usePageView } from '@jitsu/nextjs';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 const description =
   'Software Engineer with +9 years of experience in web development. Worked on multiple types of companies, multiple types of business, and use cases.';
@@ -28,7 +28,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         <meta name='description' content={description} />
       </Head>
       <JitsuProvider client={jitsuClient}>
-        <main className={inter.className}>
+        <main className={`${inter.variable} font-sans`}>
           <Component {...pageProps} />
         </main>
       </JitsuProvider>
