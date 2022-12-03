@@ -5,14 +5,15 @@ import Head from 'next/head';
 import * as gtag from 'lib/gtag';
 
 import 'styles/tailwind.css';
+import { AppProps } from 'next/app';
 
 const description =
   'Software Engineer with +9 years of experience in web development. Worked on multiple types of companies, multiple types of business, and use cases.';
 
-function MyApp({ Component, pageProps }) {
+const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
   useEffect(() => {
-    const handleRouteChange = (url) => {
+    const handleRouteChange = (url: string) => {
       gtag.pageView(url);
     };
     router.events.on('routeChangeComplete', handleRouteChange);
@@ -32,6 +33,6 @@ function MyApp({ Component, pageProps }) {
       <Component {...pageProps} />
     </>
   );
-}
+};
 
-export default MyApp;
+export default App;

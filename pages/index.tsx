@@ -23,10 +23,11 @@ export default function Home() {
               </p>
               <div className="mt-5 sm:flex sm:justify-center sm:mt-8 lg:justify-start">
                 <div className="rounded-md shadow">
-                  <Link href="resume">
-                    <a className="focus:ring-emerald flex items-center justify-center px-8 py-3 w-full text-white text-base font-medium leading-6 hover:bg-emerald-500 bg-emerald-600 border focus:border-emerald-700 border-transparent rounded-md focus:outline-none transition duration-150 ease-in-out md:px-10 md:py-4 md:text-lg">
-                      See Resume
-                    </a>
+                  <Link
+                    href="resume"
+                    className="focus:ring-emerald flex items-center justify-center px-8 py-3 w-full text-white text-base font-medium leading-6 hover:bg-emerald-500 bg-emerald-600 border focus:border-emerald-700 border-transparent rounded-md focus:outline-none transition duration-150 ease-in-out md:px-10 md:py-4 md:text-lg"
+                  >
+                    See Resume
                   </Link>
                 </div>
               </div>
