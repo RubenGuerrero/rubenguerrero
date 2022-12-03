@@ -1,18 +1,15 @@
-const colors = require('tailwindcss/colors');
+/** @type {import('tailwindcss').Config} */
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  purge: ['./components/**/*.js', './pages/**/*.js'],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontFamily: {
-        sans: 'Roboto, sans-serif',
-      },
-      colors: {
-        emerald: colors.emerald,
+        sans: ['var(--font-inter)', ...fontFamily.sans],
       },
     },
   },
-  darkMode: 'media',
-  variants: {},
   plugins: [],
+  darkMode: 'media',
 };
