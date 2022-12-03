@@ -5,8 +5,9 @@ export interface WorkExperience {
   position: string
   startDate: string
   endDate: string | null
-  description: string,
+  description: string
   stack?: string[]
+  showPlusDate?: boolean
 }
 
 export interface WorkExperienceProps {
