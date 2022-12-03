@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Head from 'next/head';
-
-import { BaseLayout } from 'components/Layouts';
 import { Header } from 'components/Header';
+import { BaseLayout } from 'components/Layouts';
+import Head from 'next/head';
+import Image from 'next/image';
 
 const whatsappHref = `https://wa.me/+34677176592?text=${encodeURIComponent(
   "Hello! I just seen your website and it's awesome!"
