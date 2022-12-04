@@ -1,10 +1,8 @@
-import { prisma } from '.';
+import { prisma } from './client';
 
 (async () => {
   try {
-    await prisma.test.create({
-      data: {},
-    });
+    //noop
   } catch (error) {
     console.error(error);
     process.exit(1);

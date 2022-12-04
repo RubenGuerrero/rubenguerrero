@@ -18,6 +18,7 @@ model WorkExperience {
   updatedAt    DateTime @updatedAt
   published    Boolean  @default(true)
   company      String
+  description  String?  @db.Text
   imagePath    String?
   imageColor   String
   position     String

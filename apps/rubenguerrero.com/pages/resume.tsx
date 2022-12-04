@@ -4,8 +4,15 @@ import { BaseLayout } from 'components/Layouts';
 import { KeySkills, TechSkills } from 'components/Skills';
 import { WorkExperiences } from 'components/WorkExperiences';
 import Head from 'next/head';
+import { prisma } from 'database';
+import superjson from 'superjson';
+import { FC } from 'react';
 
-export default function Resume() {
+interface Props {
+  workExperiences: [];
+}
+
+const Resume: FC<Props> = ({ workExperiences }) => {
   return (
     <>
       <Head>
@@ -21,8 +28,7 @@ export default function Resume() {
             <BioSummary />
             <KeySkills />
             <TechSkills />
-
-            <WorkExperiences />
+            <WorkExperiences workExperiences={workExperiences} />
           </div>
         </div>
         <div className="p-8 text-sm text-gray-400 text-center">
@@ -34,4 +40,19 @@ export default function Resume() {
       </BaseLayout>
     </>
   );
-}
+};
+
+export default Resume;
+
+export const getStaticProps = async () => {
+  const workExperiences = await prisma.workExperience.findMany({
+    where: { published: true },
+    orderBy: [{ startDate: 'desc' }],
+  });
+
+  return {
+    props: {
+      workExperiences: superjson.serialize(workExperiences).json,
+    },
+  };
+};

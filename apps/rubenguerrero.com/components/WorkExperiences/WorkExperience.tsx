@@ -41,18 +41,20 @@ const WorkExperience = ({ work, nextImageColor }: WorkExperienceProps) => (
         {renderDateAmount(work.startDate, work.endDate, work.showPlusDate)}
       </div>
       <div className="text-gray-900 dark:text-gray-200">
-        <ReactMarkdown
-          components={{
-            p: (props) => <p className="pb-4" {...props} />,
-            ul: (props) => <ul className="mb-4 pl-2 list-inside list-disc" {...props} />,
-          }}
-        >
-          {work.description}
-        </ReactMarkdown>
+        {!!work.description && (
+          <ReactMarkdown
+            components={{
+              p: ({ children }) => <p className="pb-4">{children}</p>,
+              ul: ({ children }) => <ul className="mb-4 pl-2 list-inside list-disc">{children}</ul>,
+            }}
+          >
+            {work.description}
+          </ReactMarkdown>
+        )}
       </div>
 
       {!!work.stack?.length && (
-        <p className="text-gray-500 italic text-sm">Tech & Tools: {work.stack.join(', ')}</p>
+        <p className="text-gray-500 italic text-sm">Tech & Tools: {work.stack}</p>
       )}
     </div>
   </div>
