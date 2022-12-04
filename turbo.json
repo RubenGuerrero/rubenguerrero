@@ -2,11 +2,13 @@
   "$schema": "https://turbo.build/schema.json",
   "globalEnv": ["NODE_ENV"],
   "pipeline": {
+    "db:generate": {
+      "dependsOn": ["^db:generate"],
+      "cache": false
+    },
     "build": {
-      "dependsOn": ["^build"],
-      "env":[
-        "NEXT_PUBLIC_TRACKING_HOST", "NEXT_PUBLIC_TRACKING_KEY"
-      ],
+      "dependsOn": ["db:generate", "^build"],
+      "env": ["NEXT_PUBLIC_TRACKING_HOST", "NEXT_PUBLIC_TRACKING_KEY"],
       "outputs": [".next/**", "dist/**"]
     },
     "test": {
@@ -15,12 +17,16 @@
     },
     "lint": {},
     "dev": {
+      "dependsOn": ["db:generate"],
       "cache": false
     },
     "start": {
       "cache": false
     },
     "clean": {
+      "cache": false
+    },
+    "db:push": {
       "cache": false
     }
   },

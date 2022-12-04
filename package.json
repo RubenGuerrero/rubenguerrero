@@ -16,6 +16,10 @@
       "prettier --write"
     ]
   },
+  "prisma": {
+    "schema": "packages/database/prisma/schema.prisma",
+    "seed": "tsx packages/database/src/seed.ts"
+  },
   "description": "rubenguerrero.com monorepo",
   "scripts": {
     "dev": "turbo run dev",
@@ -23,7 +27,8 @@
     "start": "turbo run start",
     "clean": "turbo run clean",
     "lint": "turbo run lint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "db:generate": "turbo run db:generate"
   },
   "keywords": [],
   "author": "RubenGuerrero",

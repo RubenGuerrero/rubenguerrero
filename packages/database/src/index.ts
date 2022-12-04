@@ -1,3 +1,1 @@
-export const sayHello = () => {
-  return 'Hello World'
-}
+export * from './client';
