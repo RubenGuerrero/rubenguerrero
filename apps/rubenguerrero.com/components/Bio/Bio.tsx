@@ -3,7 +3,7 @@ import avatar from 'public/avatar.png';
 import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from 'react-icons/fa';
 
 export const Bio = () => (
-  <div className="mb-5 mt-4 mx-auto text-center md:sticky md:top-5">
+  <div className="mx-auto mb-5 mt-4 text-center md:sticky md:top-5">
     <div className="flex justify-center">
       <div>
         <Image
@@ -17,11 +17,11 @@ export const Bio = () => (
       </div>
     </div>
     <div className="pt-1 font-bold">Rubén Guerrero Sánchez</div>
-    <div className="mb-2 text-gray-600 dark:text-gray-500 text-sm">Senior Software Engineer</div>
+    <div className="mb-2 text-sm text-gray-600 dark:text-gray-500">Senior Software Engineer</div>
     <div className="text-center text-sm">
       <a
         href="mailto:yo@rubenguerrero.com"
-        className="inline-block align-middle h-8 hover:underline leading-none"
+        className="inline-block h-8 align-middle leading-none hover:underline"
       >
         yo@rubenguerrero.com
       </a>
@@ -31,7 +31,7 @@ export const Bio = () => (
         href="https://github.com/RubenGuerrero"
         target="_blank"
         rel="noreferrer"
-        className="text-gray-400 hover:text-gray-600 transition-colors"
+        className="text-gray-400 transition-colors hover:text-gray-600"
       >
         <FaGithubSquare size={24} />
       </a>
@@ -39,7 +39,7 @@ export const Bio = () => (
         href="https://twitter.com/ruben_guerrero"
         target="_blank"
         rel="noreferrer"
-        className="text-gray-400 hover:text-gray-600 transition-colors"
+        className="text-gray-400 transition-colors hover:text-gray-600"
       >
         <FaTwitterSquare size={24} />
       </a>
@@ -47,7 +47,7 @@ export const Bio = () => (
         href="https://www.linkedin.com/in/ruben-guerrero-/"
         target="_blank"
         rel="noreferrer"
-        className="text-gray-400 hover:text-gray-600 transition-colors"
+        className="text-gray-400 transition-colors hover:text-gray-600"
       >
         <FaLinkedin size={24} />
       </a>

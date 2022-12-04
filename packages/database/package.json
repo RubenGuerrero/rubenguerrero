@@ -2,6 +2,9 @@
   "name": "database",
   "version": "1.0.0",
   "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "RubenGuerrero",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -9,24 +12,24 @@
     "dist/**"
   ],
   "scripts": {
-    "clean": "rimraf .turbo node_modules dist",
-    "build": "pnpm db:generate && tsup",
-    "dev": "pnpm db:generate && tsup --watch",
-    "lint": "eslint ./src/**/*.ts",
-    "format": "prisma format",
-    "db:generate": "prisma generate",
-    "studio": "prisma studio",
-    "predev": "pnpm db:generate",
     "prebuild": "pnpm db:generate",
+    "build": "pnpm db:generate && tsup",
+    "clean": "rimraf .turbo node_modules dist",
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate",
     "db:migrate:deploy": "prisma migrate deploy",
     "db:migrate:dev": "prisma migrate dev --create-only",
-    "db:migrate": "prisma migrate",
     "db:push": "prisma db push --skip-generate",
-    "db:seed": "tsx src/seed.ts"
+    "db:seed": "tsx src/seed.ts",
+    "predev": "pnpm db:generate",
+    "dev": "pnpm db:generate && tsup --watch",
+    "format": "prisma format",
+    "lint": "eslint ./src/**/*.ts",
+    "studio": "prisma studio"
   },
-  "keywords": [],
-  "author": "RubenGuerrero",
-  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.7.1"
+  },
   "devDependencies": {
     "@types/node": "^18.11.10",
     "eslint-config-custom": "workspace:*",
@@ -36,8 +39,5 @@
     "tsup": "^6.5.0",
     "tsx": "^3.12.1",
     "typescript": "^4.9.3"
-  },
-  "dependencies": {
-    "@prisma/client": "^4.7.1"
   }
 }

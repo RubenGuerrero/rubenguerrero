@@ -1,9 +1,9 @@
+import { createClient, JitsuProvider, usePageView } from '@jitsu/nextjs';
 import { Inter } from '@next/font/google';
+import { config } from 'config';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import 'styles/globals.css';
-import { config } from 'config';
-import { createClient, JitsuProvider, usePageView } from '@jitsu/nextjs';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 

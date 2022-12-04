@@ -1,5 +1,5 @@
-import { NextApiRequest, NextApiResponse } from 'next';
 import { prisma } from 'database';
+import { NextApiRequest, NextApiResponse } from 'next';
 
 const hello = async (req: NextApiRequest, res: NextApiResponse) => {
   res.statusCode = 200;

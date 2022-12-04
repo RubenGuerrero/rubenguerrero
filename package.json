@@ -1,10 +1,22 @@
 {
-  "license": "MIT",
   "private": true,
+  "description": "rubenguerrero.com monorepo",
+  "keywords": [],
+  "license": "MIT",
+  "author": "RubenGuerrero",
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
+  "scripts": {
+    "build": "turbo run build",
+    "clean": "turbo run clean",
+    "db:generate": "turbo run db:generate",
+    "dev": "turbo run dev",
+    "format": "prettier --write .",
+    "lint": "turbo run lint",
+    "start": "turbo run start"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
@@ -16,30 +28,18 @@
       "prettier --write"
     ]
   },
-  "prisma": {
-    "schema": "packages/database/prisma/schema.prisma",
-    "seed": "tsx packages/database/src/seed.ts"
-  },
-  "description": "rubenguerrero.com monorepo",
-  "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "start": "turbo run start",
-    "clean": "turbo run clean",
-    "lint": "turbo run lint",
-    "format": "prettier --write .",
-    "db:generate": "turbo run db:generate"
-  },
-  "keywords": [],
-  "author": "RubenGuerrero",
+  "prettier": "prettier-plugin-custom",
   "devDependencies": {
     "eslint": "^8.29.0",
-    "eslint-config-custom": "workspace:*",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.4",
     "prettier": "^2.8.0",
     "prettier-plugin-custom": "workspace:*",
     "turbo": "^1.6.3"
   },
-  "packageManager": "pnpm@7.18.0"
+  "packageManager": "pnpm@7.18.0",
+  "prisma": {
+    "schema": "packages/database/prisma/schema.prisma",
+    "seed": "tsx packages/database/src/seed.ts"
+  }
 }

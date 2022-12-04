@@ -3,13 +3,14 @@ import { Header } from 'components/Header';
 import { BaseLayout } from 'components/Layouts';
 import { KeySkills, TechSkills } from 'components/Skills';
 import { WorkExperiences } from 'components/WorkExperiences';
-import Head from 'next/head';
 import { prisma } from 'database';
-import superjson from 'superjson';
+import type { WorkExperience } from 'database';
+import Head from 'next/head';
 import { FC } from 'react';
+import superjson from 'superjson';
 
 interface Props {
-  workExperiences: [];
+  workExperiences: WorkExperience[];
 }
 
 const Resume: FC<Props> = ({ workExperiences }) => {
@@ -20,7 +21,7 @@ const Resume: FC<Props> = ({ workExperiences }) => {
       </Head>
       <BaseLayout>
         <Header />
-        <div className="w-full md:grid grid-cols-11 max-w-6xl mx-auto gap-8 px-4 mt-4">
+        <div className="mx-auto mt-4 w-full max-w-6xl grid-cols-11 gap-8 px-4 md:grid">
           <div className="col-span-3">
             <Bio />
           </div>
@@ -31,7 +32,7 @@ const Resume: FC<Props> = ({ workExperiences }) => {
             <WorkExperiences workExperiences={workExperiences} />
           </div>
         </div>
-        <div className="p-8 text-sm text-gray-400 text-center">
+        <div className="p-8 text-center text-sm text-gray-400">
           Made with ❤️ -{' '}
           <a href="https://github.com/RubenGuerrero/rubenguerrero" target="_blank" rel="noreferrer">
             See source code
@@ -47,7 +48,7 @@ export default Resume;
 export const getStaticProps = async () => {
   const workExperiences = await prisma.workExperience.findMany({
     where: { published: true },
-    orderBy: [{ startDate: 'desc' }],
+    orderBy: [{ showPlusDate: 'desc' }, { startDate: 'desc' }],
   });
 
   return {
