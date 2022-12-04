@@ -7,7 +7,7 @@
       "cache": false
     },
     "build": {
-      "dependsOn": ["db:generate", "^build"],
+      "dependsOn": ["^build", "db:generate"],
       "env": ["NEXT_PUBLIC_TRACKING_HOST", "NEXT_PUBLIC_TRACKING_KEY"],
       "outputs": [".next/**", "dist/**"]
     },
