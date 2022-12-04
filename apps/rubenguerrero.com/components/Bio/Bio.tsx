@@ -27,14 +27,29 @@ export const Bio = () => (
       </a>
     </div>
     <div className="flex items-center justify-center gap-2">
-      <a href="https://github.com/RubenGuerrero" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-600 transition-colors">
+      <a
+        href="https://github.com/RubenGuerrero"
+        target="_blank"
+        rel="noreferrer"
+        className="text-gray-400 hover:text-gray-600 transition-colors"
+      >
         <FaGithubSquare size={24} />
       </a>
-      <a href="https://twitter.com/ruben_guerrero" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-600 transition-colors">
+      <a
+        href="https://twitter.com/ruben_guerrero"
+        target="_blank"
+        rel="noreferrer"
+        className="text-gray-400 hover:text-gray-600 transition-colors"
+      >
         <FaTwitterSquare size={24} />
       </a>
-      <a href="https://www.linkedin.com/in/ruben-guerrero-/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-gray-600 transition-colors">
-        <FaLinkedin size={24}  />
+      <a
+        href="https://www.linkedin.com/in/ruben-guerrero-/"
+        target="_blank"
+        rel="noreferrer"
+        className="text-gray-400 hover:text-gray-600 transition-colors"
+      >
+        <FaLinkedin size={24} />
       </a>
     </div>
   </div>

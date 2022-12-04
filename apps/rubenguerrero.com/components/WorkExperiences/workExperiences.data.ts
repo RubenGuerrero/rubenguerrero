@@ -20,7 +20,21 @@ const workExperiences: WorkExperience[] = [
     endDate: null,
     description:
       'Boopos helps talented buyers acquire a business and brokers close their sale mandates by committing flexible financing for buying an e-commerce or SaaS businesses.',
-    stack: ['React', 'Jest', 'Typescript', 'Node', 'AWS', 'MongoDB', 'Segment', 'Customer.io', 'Hubspot CRM', 'LaunchDarkly', 'Heap.io', 'Sentry', 'Docker'],
+    stack: [
+      'React',
+      'Jest',
+      'Typescript',
+      'Node',
+      'AWS',
+      'MongoDB',
+      'Segment',
+      'Customer.io',
+      'Hubspot CRM',
+      'LaunchDarkly',
+      'Heap.io',
+      'Sentry',
+      'Docker',
+    ],
   },
   {
     company: 'Clinpify',
@@ -29,8 +43,23 @@ const workExperiences: WorkExperience[] = [
     position: 'CPO & Co-Founder',
     startDate: '2021-01',
     endDate: '2022-08',
-    description: 'Clinpify is transforming the way people wash their car, giving everyone access to enjoy their vehicle always clean without lifting a finger. We improve the future by making the world shine.',
-    stack: ['React', 'Typescript', 'Jest', 'React Native', 'Stripe', 'Nestjs', 'Nodejs', 'Heroku', 'Customer.io', 'Segment', 'Stripe', 'Sentry', 'Docker'],
+    description:
+      'Clinpify is transforming the way people wash their car, giving everyone access to enjoy their vehicle always clean without lifting a finger. We improve the future by making the world shine.',
+    stack: [
+      'React',
+      'Typescript',
+      'Jest',
+      'React Native',
+      'Stripe',
+      'Nestjs',
+      'Nodejs',
+      'Heroku',
+      'Customer.io',
+      'Segment',
+      'Stripe',
+      'Sentry',
+      'Docker',
+    ],
   },
   {
     company: 'Ontruck',
@@ -109,7 +138,7 @@ I was mostly creating websites focused on marketing campaigns, also working on S
 
 Binocean was a small company of three employees. I was really focused on the Frontend part, also playing around with Backend at some points.
 `,
-  stack: ['HTML5', 'CSS3', 'Javascript', 'jQuery', 'PHP', 'Wordpress', 'Django'],
+    stack: ['HTML5', 'CSS3', 'Javascript', 'jQuery', 'PHP', 'Wordpress', 'Django'],
   },
 ];
 

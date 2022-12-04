@@ -1,7 +1,6 @@
 import dayjs from 'dayjs';
 import pluralize from 'pluralize';
 
-
 const renderDatePlural = (date: number, word: string) => {
   if (!date) return '';
   return pluralize(word, date, true);

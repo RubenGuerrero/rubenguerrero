@@ -1,13 +1,13 @@
 import { WorkExperienceProps } from './WorkExperience.inteface';
 import { renderDate, renderDateAmount } from './utils';
-import clx from 'classnames';
+import cn from 'clsx';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 
 const WorkExperience = ({ work, nextImageColor }: WorkExperienceProps) => (
   <div className="mb-8 flex relative">
     <div
-      className={clx('w-[1px] absolute h-full top-8 left-4 -ml-[0.5px]')}
+      className={cn('w-[1px] absolute h-full top-8 left-4 -ml-[0.5px]')}
       style={{
         backgroundImage: `linear-gradient(to bottom, ${work.imageColor}, ${nextImageColor})`,
       }}
@@ -41,14 +41,14 @@ const WorkExperience = ({ work, nextImageColor }: WorkExperienceProps) => (
         {renderDateAmount(work.startDate, work.endDate, work.showPlusDate)}
       </div>
       <div className="text-gray-900 dark:text-gray-200">
-      <ReactMarkdown
-        components={{
-          p: (props) => <p className="pb-4" {...props} />,
-          ul: (props) => <ul className="mb-4 pl-2 list-inside list-disc" {...props} />,
-        }}
-      >
-        {work.description}
-      </ReactMarkdown>
+        <ReactMarkdown
+          components={{
+            p: (props) => <p className="pb-4" {...props} />,
+            ul: (props) => <ul className="mb-4 pl-2 list-inside list-disc" {...props} />,
+          }}
+        >
+          {work.description}
+        </ReactMarkdown>
       </div>
 
       {!!work.stack?.length && (

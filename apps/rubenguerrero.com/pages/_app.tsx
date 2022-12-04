@@ -11,21 +11,20 @@ const description =
 
 const jitsuClient = createClient({
   tracking_host: 'https://t.rubenguerrero.com',
-  key: 'js.qnlqzou74ajm68fb8gllll.a5cqu08bmsc1dpg69y4yar'
+  key: 'js.qnlqzou74ajm68fb8gllll.a5cqu08bmsc1dpg69y4yar',
 });
 
 const App = ({ Component, pageProps }: AppProps) => {
-
-  usePageView(jitsuClient)
+  usePageView(jitsuClient);
 
   return (
     <>
       <Head>
         <title>Rubén Guerrero - Senior Software Engineer</title>
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        <meta property='og:title' content='Rubén Guerrero - Senior Software Engineer' />
-        <meta property='og:description' content={description} />
-        <meta name='description' content={description} />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta property="og:title" content="Rubén Guerrero - Senior Software Engineer" />
+        <meta property="og:description" content={description} />
+        <meta name="description" content={description} />
       </Head>
       <JitsuProvider client={jitsuClient}>
         <main className={`${inter.variable} font-sans`}>
@@ -37,4 +36,3 @@ const App = ({ Component, pageProps }: AppProps) => {
 };
 
 export default App;
-
