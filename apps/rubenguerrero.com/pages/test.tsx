@@ -1,32 +1,36 @@
-import { useSession, signIn, signOut } from "next-auth/react"
+import { useSession, signIn, signOut } from 'next-auth/react';
 import { useCallback } from 'react';
+import { BaseLayout } from 'components/Layouts';
 
-const TestPage = () => {
-
-  const { data: session, status } = useSession()
+const Content = () => {
+  const { data: session, status } = useSession();
 
   const handleSignOut = useCallback(async () => {
     await signOut();
-  }, [])
+  }, []);
 
   const handleSignIn = useCallback(async () => {
     await signIn();
-  }, [])
+  }, []);
 
-  if(status === "loading") {
-    return <div>Loading...</div>
+  if (status === 'loading') {
+    return <div>Loading...</div>;
   }
 
-  if (status === "authenticated") {
+  if (status === 'authenticated') {
     return <div>
       <div>Signed in as {session?.user?.email}</div>
       <button onClick={handleSignOut}>Sign out</button>
-    </div>
+    </div>;
   }
 
   return <div>
     <button onClick={handleSignIn}>Sign in</button>
-  </div>
+  </div>;
+};
+
+const TestPage = () => {
+  return <BaseLayout><Content /></BaseLayout>;
 };
 
 export default TestPage;
