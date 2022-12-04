@@ -3,15 +3,16 @@
   "pipeline": {
     "build": {
       "dependsOn": ["^build"],
+      "env":[
+        "NEXT_PUBLIC_TRACKING_HOST", "NEXT_PUBLIC_TRACKING_KEY"
+      ],
       "outputs": [".next/**", "dist/**"]
     },
     "test": {
       "dependsOn": ["^build"],
       "outputs": []
     },
-    "lint": {
-      "outputs": []
-    },
+    "lint": {},
     "dev": {
       "cache": false
     },
@@ -21,5 +22,6 @@
     "clean": {
       "cache": false
     }
-  }
+  },
+  "globalDependencies": ["**/.env.local"]
 }
