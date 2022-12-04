@@ -1,6 +1,6 @@
-.next
-node_modules
+**/.next
+**/.vercel
+.vercel/**
+**/dist
+**/node_modules
 pnpm-lock.yaml
-*.md
-dist
-.vercel

@@ -4,7 +4,6 @@ declare global {
   // eslint-disable-next-line no-unused-vars
   var prisma: PrismaClient | undefined;
 }
-
 export * from '@prisma/client';
 export const prisma = global.prisma || new PrismaClient();
 

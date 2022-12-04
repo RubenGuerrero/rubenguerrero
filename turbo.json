@@ -7,11 +7,8 @@
       "env": ["NEXT_PUBLIC_TRACKING_HOST", "NEXT_PUBLIC_TRACKING_KEY"],
       "outputs": [".next/**", "dist/**"]
     },
-    "test": {
-      "dependsOn": ["^build"],
-      "outputs": []
-    },
     "lint": {},
+    "format": {},
     "dev": {
       "cache": false
     },
@@ -19,9 +16,6 @@
       "cache": false
     },
     "clean": {
-      "cache": false
-    },
-    "db:push": {
       "cache": false
     }
   },
