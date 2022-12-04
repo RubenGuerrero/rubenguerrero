@@ -1,0 +1,42 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "clean": "rimraf .turbo node_modules dist",
+    "build": "pnpm db:generate && tsup",
+    "dev": "pnpm db:generate && tsup --watch",
+    "lint": "eslint ./src/**/*.ts",
+    "format": "prisma format",
+    "db:generate": "prisma generate",
+    "studio": "prisma studio",
+    "predev": "pnpm db:generate",
+    "prebuild": "pnpm db:generate",
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:migrate:dev": "prisma migrate dev",
+    "db:push": "prisma db push --skip-generate",
+    "db:seed": "tsx src/seed.ts"
+  },
+  "keywords": [],
+  "author": "RubenGuerrero",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.10",
+    "eslint-config-custom": "workspace:*",
+    "prisma": "^4.7.1",
+    "rimraf": "^3.0.2",
+    "tsconfig": "workspace:*",
+    "tsup": "^6.5.0",
+    "tsx": "^3.12.1",
+    "typescript": "^4.9.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.7.1"
+  }
+}

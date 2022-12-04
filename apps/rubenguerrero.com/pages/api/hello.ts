@@ -1,8 +1,9 @@
 import { NextApiRequest, NextApiResponse } from 'next';
+import { prisma } from 'database';
 
-const hello = (req: NextApiRequest, res: NextApiResponse) => {
+const hello = async (req: NextApiRequest, res: NextApiResponse) => {
   res.statusCode = 200;
-  res.json({ name: 'Hello world' });
+  res.json(await prisma.test.findMany({}));
 };
 
 export default hello;
