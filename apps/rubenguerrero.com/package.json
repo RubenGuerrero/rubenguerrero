@@ -4,8 +4,8 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "clean": "rimraf .turbo node_modules .next",
     "build": "next build",
+    "clean": "rimraf .turbo node_modules .next",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
@@ -23,7 +23,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
-    "react-markdown": "^8.0.4"
+    "react-markdown": "^8.0.4",
+    "superjson": "^1.11.0"
   },
   "devDependencies": {
     "@types/node": "^18.11.10",

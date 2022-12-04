@@ -4,7 +4,7 @@ export const Skills = ({ title, skills }: { title: string; skills: string[] }) =
     <ul className="flex flex-wrap text-sm">
       {skills.map((skill) => (
         <li
-          className="mb-2 mr-2 p-2 whitespace-nowrap leading-none bg-gray-200 dark:bg-gray-700 rounded-md"
+          className="mb-2 mr-2 whitespace-nowrap rounded-md bg-gray-200 p-2 leading-none dark:bg-gray-700"
           key={skill}
         >
           {skill}

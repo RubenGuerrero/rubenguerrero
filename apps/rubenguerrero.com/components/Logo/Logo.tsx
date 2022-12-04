@@ -8,7 +8,7 @@ const Logo = ({ textSize = 'text-4xl' }: Props) => (
   <h2
     className={cn(
       textSize,
-      'font-extrabold tracking-tight text-gray-700 dark:text-gray-300 leading-none'
+      'font-extrabold leading-none tracking-tight text-gray-700 dark:text-gray-300'
     )}
   >
     R<span className="text-emerald-600">G</span>

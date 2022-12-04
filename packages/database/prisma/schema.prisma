@@ -11,3 +11,19 @@ generator client {
 model Test {
   id String @id @default(cuid())
 }
+
+model WorkExperience {
+  id           String   @id @default(cuid())
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+  published    Boolean  @default(true)
+  company      String
+  description  String?  @db.Text
+  imagePath    String?
+  imageColor   String
+  position     String
+  startDate    String
+  endDate      String?
+  showPlusDate Boolean  @default(false)
+  stack        String?
+}

@@ -5,14 +5,14 @@ import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 
 const WorkExperience = ({ work, nextImageColor }: WorkExperienceProps) => (
-  <div className="mb-8 flex relative">
+  <div className="relative mb-8 flex">
     <div
-      className={cn('w-[1px] absolute h-full top-8 left-4 -ml-[0.5px]')}
+      className={cn('absolute top-8 left-4 -ml-[0.5px] h-full w-[1px]')}
       style={{
         backgroundImage: `linear-gradient(to bottom, ${work.imageColor}, ${nextImageColor})`,
       }}
     />
-    <div className="w-12 flex-0">
+    <div className="flex-0 w-12">
       {work.imagePath ? (
         <Image
           src={require(`public/${work.imagePath}`)}
@@ -24,7 +24,7 @@ const WorkExperience = ({ work, nextImageColor }: WorkExperienceProps) => (
         />
       ) : (
         <div
-          className="w-8 h-8 rounded-full flex items-center justify-center font-bold text-black"
+          className="flex h-8 w-8 items-center justify-center rounded-full font-bold text-black"
           style={{ backgroundColor: work.imageColor }}
         >
           {work.company[0]}
@@ -32,27 +32,29 @@ const WorkExperience = ({ work, nextImageColor }: WorkExperienceProps) => (
       )}
     </div>
     <div className="flex-1">
-      <div className="text-gray-700 dark:text-gray-200 text-lg font-bold">
+      <div className="text-lg font-bold text-gray-700 dark:text-gray-200">
         {work.company} <span className="text-gray-300">·</span>{' '}
         <span className="text-gray-500 dark:text-gray-200">{work.position}</span>
       </div>
-      <div className="mb-2 text-gray-500 dark:text-gray-500 text-sm">
+      <div className="mb-2 text-sm text-gray-500 dark:text-gray-500">
         {renderDate(work.startDate, work.endDate)} ·{' '}
         {renderDateAmount(work.startDate, work.endDate, work.showPlusDate)}
       </div>
       <div className="text-gray-900 dark:text-gray-200">
-        <ReactMarkdown
-          components={{
-            p: (props) => <p className="pb-4" {...props} />,
-            ul: (props) => <ul className="mb-4 pl-2 list-inside list-disc" {...props} />,
-          }}
-        >
-          {work.description}
-        </ReactMarkdown>
+        {!!work.description && (
+          <ReactMarkdown
+            components={{
+              p: ({ children }) => <p className="pb-4">{children}</p>,
+              ul: ({ children }) => <ul className="mb-4 list-inside list-disc pl-2">{children}</ul>,
+            }}
+          >
+            {work.description}
+          </ReactMarkdown>
+        )}
       </div>
 
       {!!work.stack?.length && (
-        <p className="text-gray-500 italic text-sm">Tech & Tools: {work.stack.join(', ')}</p>
+        <p className="text-sm italic text-gray-500">Tech & Tools: {work.stack}</p>
       )}
     </div>
   </div>
