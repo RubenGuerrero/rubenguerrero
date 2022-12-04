@@ -2,12 +2,8 @@
   "$schema": "https://turbo.build/schema.json",
   "globalEnv": ["NODE_ENV"],
   "pipeline": {
-    "db:generate": {
-      "dependsOn": ["^db:generate"],
-      "cache": false
-    },
     "build": {
-      "dependsOn": ["^build", "^db:generate"],
+      "dependsOn": ["^build"],
       "env": ["NEXT_PUBLIC_TRACKING_HOST", "NEXT_PUBLIC_TRACKING_KEY"],
       "outputs": [".next/**", "dist/**"]
     },
@@ -17,7 +13,6 @@
     },
     "lint": {},
     "dev": {
-      "dependsOn": ["db:generate"],
       "cache": false
     },
     "start": {
