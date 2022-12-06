@@ -1,10 +1,11 @@
 import { PropsWithChildren } from 'react';
-import { Inter } from '@next/font/google';
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 const BaseLayout = ({ children }: PropsWithChildren<{}>) => {
-  return <main className={`${inter.variable} font-sans`}>{children}</main>;
+  return (
+    <main className="min-h-full bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+      {children}
+    </main>
+  );
 };
 
 export default BaseLayout;

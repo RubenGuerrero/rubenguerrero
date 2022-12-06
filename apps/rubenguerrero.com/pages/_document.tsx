@@ -4,7 +4,7 @@ const MyDocument = () => {
   return (
     <Html lang="en">
       <Head />
-      <body className="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+      <body>
         <Main />
         <NextScript />
       </body>
