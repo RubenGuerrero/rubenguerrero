@@ -13,6 +13,6 @@ export const authOptions = {
     }),
   ],
   secret: serverConfig.NEXTAUTH_SECRET,
-  debug: true,
+  debug: process.env.NODE_ENV === 'development',
 };
 export default NextAuth(authOptions);
