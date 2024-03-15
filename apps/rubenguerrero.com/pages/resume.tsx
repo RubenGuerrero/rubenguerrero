@@ -3,10 +3,10 @@ import { Header } from 'components/Header';
 import { BaseLayout } from 'components/Layouts';
 import { KeySkills, TechSkills } from 'components/Skills';
 import { WorkExperiences } from 'components/WorkExperiences';
-import type { WorkExperience } from 'types';
 import Head from 'next/head';
 import { FC } from 'react';
 import superjson from 'superjson';
+import type { WorkExperience } from 'types';
 
 const workExperiences = [
   {
@@ -187,7 +187,6 @@ const Resume: FC<Props> = ({ workExperiences }) => {
 export default Resume;
 
 export const getStaticProps = async () => {
-
   return {
     props: {
       workExperiences: superjson.serialize(workExperiences).json,
