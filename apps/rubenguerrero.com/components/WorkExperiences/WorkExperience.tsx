@@ -54,7 +54,7 @@ const WorkExperience = ({ work, nextImageColor }: WorkExperienceProps) => (
       </div>
 
       {!!work.stack?.length && (
-        <p className="text-sm italic text-gray-500">Tech & Tools: {work.stack}</p>
+        <p className="text-sm italic text-gray-500">Tech & Tools: {work.stack.join(', ')}</p>
       )}
     </div>
   </div>

@@ -8,8 +8,9 @@ import { FC } from 'react';
 import superjson from 'superjson';
 import type { WorkExperience } from 'types';
 
-const workExperiences = [
+const workExperiences: WorkExperience[] = [
   {
+    id: 'freelance',
     company: 'Freelance',
     imagePath: 'avatar.png',
     imageColor: '#306a55',
@@ -20,6 +21,7 @@ const workExperiences = [
     showPlusDate: true,
   },
   {
+    id: 'boopos',
     company: 'Boopos',
     imagePath: 'boopos.png',
     imageColor: '#000',
@@ -45,6 +47,7 @@ const workExperiences = [
     ],
   },
   {
+    id: 'clinpify',
     company: 'Clinpify',
     imagePath: 'clinpify.png',
     imageColor: '#1d00fd',
@@ -70,6 +73,7 @@ const workExperiences = [
     ],
   },
   {
+    id: 'ontruck',
     company: 'Ontruck',
     imagePath: 'ontruck.png',
     imageColor: '#0040cc',
@@ -85,6 +89,7 @@ I am employee #5 of Ontruck, so I have been working since almost the beginning o
     stack: ['React', 'Redux', 'Python', 'Django', 'Flask', 'Segment', 'Sentry', 'Datadog'],
   },
   {
+    id: 'idealista',
     company: 'Idealista',
     position: 'Frontend Engineer',
     imageColor: '#e1f56f',
@@ -97,6 +102,7 @@ Also, I worked on building the internal applications of the company. I was mainl
     stack: ['JSP', 'Java', 'Javascript', 'HTML5', 'CSS3', 'jQuery', 'Dojo...'],
   },
   {
+    id: 'redbility',
     company: 'Redbility',
     position: 'Frontend Engineer',
     imagePath: 'redbility.png',
@@ -109,6 +115,7 @@ The designs were very demanding in terms of interactions and user experience, wi
     stack: ['Pixel-perfect, HTML5, CSS3, jQuery, Javascript'],
   },
   {
+    id: 'peoplecall',
     company: 'Peoplecall',
     position: 'Frontend Engineer',
     imageColor: '#de5332',
@@ -125,6 +132,7 @@ I worked closely with the design team, defining and building the interactions on
     stack: ['Responsive design', 'Jekyll', 'CSS', 'HTML5', 'Javascript', 'Phonegap'],
   },
   {
+    id: 'eternitic',
     company: 'Eternitic',
     startDate: '2012-04',
     endDate: '2012-07',
@@ -137,6 +145,7 @@ I was mostly creating websites focused on marketing campaigns, also working on S
     stack: ['Joomla (yes, Joomla)', 'jQuery', 'HTML5', 'CSS from the scratch'],
   },
   {
+    id: 'binocean',
     company: 'Binocean',
     startDate: '2011-11',
     endDate: '2012-04',
