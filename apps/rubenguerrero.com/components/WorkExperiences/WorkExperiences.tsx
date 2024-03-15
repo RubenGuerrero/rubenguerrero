@@ -1,5 +1,5 @@
 import { WorkExperience } from './WorkExperience';
-import type { WorkExperience as WorkExperienceType } from 'database';
+import { WorkExperience as WorkExperienceType } from 'types';
 
 export const WorkExperiences = ({ workExperiences }: { workExperiences: WorkExperienceType[] }) => (
   <>

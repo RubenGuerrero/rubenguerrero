@@ -12,12 +12,10 @@
     "start": "next start"
   },
   "dependencies": {
-    "@jitsu/nextjs": "^3.1.2",
-    "@next-auth/prisma-adapter": "^1.0.5",
+    "@jitsu/jitsu-react": "^1.8.2",
     "@next/font": "^13.0.6",
     "autoprefixer": "^10.4.13",
     "clsx": "^1.2.1",
-    "database": "workspace:*",
     "dayjs": "^1.11.6",
     "framer-motion": "^7.6.19",
     "next": "^13.0.6",
