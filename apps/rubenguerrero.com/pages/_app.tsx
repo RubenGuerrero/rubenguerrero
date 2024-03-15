@@ -13,15 +13,16 @@ const App = ({ Component, pageProps }: AppProps) => (
   <>
     <Head>
       <title>Rubén Guerrero - Senior Software Engineer</title>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta property="og:title" content="Rubén Guerrero - Senior Software Engineer" />
-      <meta property="og:description" content={description} />
-      <meta name="description" content={description} />
+      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+      <meta property='og:title' content='Rubén Guerrero - Senior Software Engineer' />
+      <meta property='og:description' content={description} />
+      <meta name='description' content={description} />
+      <script defer data-domain='rubenguerrero.com' src='https://plausible.io/js/script.js'></script>
     </Head>
     <style jsx global>
       {`
-        :root {
-          --inter-font: ${inter.style.fontFamily};
+          :root {
+              --inter-font: ${inter.style.fontFamily};
         }
       `}
     </style>
