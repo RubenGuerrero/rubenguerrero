@@ -1,4 +1,4 @@
-import type { WorkExperience } from 'database';
+import type { WorkExperience } from 'types';
 
 export interface WorkExperienceProps {
   work: WorkExperience;
