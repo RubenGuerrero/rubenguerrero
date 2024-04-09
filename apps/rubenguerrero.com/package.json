@@ -10,9 +10,9 @@
     "format": "prettier --write .",
     "lint": "next lint",
     "start": "next start",
-    "pages:build": "npx @cloudflare/next-on-pages",
-    "preview": "npm run pages:build && wrangler pages dev .vercel/output/static",
-    "deploy": "npm run pages:build && wrangler pages deploy .vercel/output/static",
+    "pages:build": "pnpx @cloudflare/next-on-pages",
+    "preview": "pnpm run pages:build && wrangler pages dev .vercel/output/static",
+    "deploy": "pnpm run pages:build && wrangler pages deploy .vercel/output/static",
     "build-cf-types": "wrangler types --env-interface CloudflareEnv env.d.ts"
   },
   "dependencies": {
