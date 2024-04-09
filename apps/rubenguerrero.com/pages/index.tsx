@@ -28,7 +28,7 @@ export default function Home() {
                       href="resume"
                       className="focus:ring-emerald flex w-full items-center justify-center rounded-md border border-transparent bg-emerald-600 px-8 py-3 text-base font-medium leading-6 text-white transition duration-150 ease-in-out hover:bg-emerald-500 focus:border-emerald-700 focus:outline-none md:px-10 md:py-4 md:text-lg"
                     >
-                      See Resume
+                      See Resume.
                     </Link>
                   </div>
                 </div>
