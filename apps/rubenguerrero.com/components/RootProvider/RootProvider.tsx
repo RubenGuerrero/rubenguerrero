@@ -1,17 +1,13 @@
 import { AnalyticsPageView } from './AnalyticsPageView';
 import { JitsuProvider } from '@jitsu/jitsu-react';
 import { config } from 'lib/config';
-import { Session } from 'next-auth';
-import { SessionProvider } from 'next-auth/react';
 import { PropsWithChildren } from 'react';
 
-export const RootProvider = ({ children, session }: PropsWithChildren<{ session: Session }>) => {
+export const RootProvider = ({ children }: PropsWithChildren) => {
   return (
-    <SessionProvider session={session}>
-      <JitsuProvider options={{ host: config.TRACKING_HOST, writeKey: config.TRACKING_KEY }}>
-        {children}
-        <AnalyticsPageView />
-      </JitsuProvider>
-    </SessionProvider>
+    <JitsuProvider options={{ host: config.TRACKING_HOST, writeKey: config.TRACKING_KEY }}>
+      {children}
+      <AnalyticsPageView />
+    </JitsuProvider>
   );
 };

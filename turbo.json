@@ -10,11 +10,7 @@
       ],
       "env": [
         "NEXT_PUBLIC_TRACKING_HOST",
-        "NEXT_PUBLIC_TRACKING_KEY",
-        "GITHUB_ID",
-        "GITHUB_SECRET",
-        "NEXTAUTH_URL",
-        "NEXTAUTH_SECRET"
+        "NEXT_PUBLIC_TRACKING_KEY"
       ],
       "outputs": [
         ".next/**",
