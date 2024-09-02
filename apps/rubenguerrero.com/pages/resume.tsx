@@ -27,9 +27,13 @@ const workExperiences: WorkExperience[] = [
     imageColor: '#000',
     position: 'Tech Lead',
     startDate: '2022-05',
-    endDate: null,
-    description:
-      'Boopos helps talented buyers acquire a business and brokers close their sale mandates by committing flexible financing for buying an e-commerce or SaaS businesses.',
+    endDate: '2024-08',
+    description: `As the first frontend engineer on the team, I took on the responsibility of defining, building, and maintaining the entire frontend ecosystem for the company, while also stepping in to support the backend as needed.
+
+As our frontend team expanded to four members, I assumed a leadership role, guiding team dynamics and ensuring that we upheld high standards and code quality.
+
+Additionally, I played an active role in the triad teams (Product Management, Product Design, and Tech Lead), where I contributed to defining objectives, setting outcomes, and focusing the direction of each development cycle.
+`,
     stack: [
       'React',
       'Jest',
@@ -54,8 +58,12 @@ const workExperiences: WorkExperience[] = [
     position: 'CPO & Co-Founder',
     startDate: '2021-01',
     endDate: '2022-08',
-    description:
-      'Clinpify is transforming the way people wash their car, giving everyone access to enjoy their vehicle always clean without lifting a finger. We improve the future by making the world shine.',
+    description: `Clinpify transformed the way people washed their cars, giving everyone the opportunity to keep their vehicles clean without lifting a finger.
+
+I was part of a three-person team that built Clinpify from the ground up. Together, we established the company's vision, mission, and objectives.
+
+My specific role involved defining and developing two React Native apps—one designed for end users and the other tailored for our internal employees.
+`,
     stack: [
       'React',
       'Typescript',
@@ -80,11 +88,11 @@ const workExperiences: WorkExperience[] = [
     position: 'Senior Staff Software Engineer',
     startDate: '2016-06',
     endDate: '2022-04',
-    description: `Working as a Senior Staff Software Engineer in one of the vertical teams. Always working close to product and business teams, understanding the business requirements, and applying technology to solve these problems.
-    
-Also, I am leading the Frontend Guild, organizing the different initiatives and sessions, with the objective of empowering the quality and good practices inside the Guild.
+    description: `I worked as a Senior Staff Software Engineer in one of the vertical teams, closely collaborating with product and business teams. My focus was on understanding business requirements and applying technology to solve these problems.
 
-I am employee #5 of Ontruck, so I have been working since almost the beginning of the company. It is been a lot of changes in terms of the company structure, way of working, business requirements, etc. Always been opened and well adapted to these changes.
+I also led the Frontend Guild, organizing various initiatives and sessions with the goal of enhancing quality and promoting good practices within the Guild.
+
+As employee #5 at Ontruck, I had been with the company since nearly the beginning. Over time, the company underwent many changes in terms of structure, ways of working, and business requirements. I remained open and well-adapted to these changes.
 `,
     stack: ['React', 'Redux', 'Python', 'Django', 'Flask', 'Segment', 'Sentry', 'Datadog'],
   },
