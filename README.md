@@ -17,9 +17,6 @@ My name is Rubén Guerrero and I'm a Senior Product Engineer (Frontend). I'm fro
   <img align="center" src="https://img.shields.io/badge/react_router%20-CA4245.svg?&style=for-the-badge&logo=react-router&logoColor=white" />
 </a>
 <a href="https://github.com/RubenGuerrero/rubenguerrero">
-  <img align="center" src="https://img.shields.io/badge/styled_components%20-DB7093.svg?&style=for-the-badge&logo=styled-components&logoColor=white" />
-</a>
-<a href="https://github.com/RubenGuerrero/rubenguerrero">
   <img align="center" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white" />
 </a>
 <a href="https://github.com/RubenGuerrero/rubenguerrero">
