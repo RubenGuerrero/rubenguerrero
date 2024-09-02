@@ -5,13 +5,13 @@ My name is Rubén Guerrero and I'm a Senior Product Engineer (Frontend). I'm fro
 ### 🚀 &nbsp;Frontend Skills
 
 <a href="https://github.com/RubenGuerrero/rubenguerrero">
-  <img align="center" src="https://img.shields.io/badge/javascript-%23F7DF1E.svg?&style=for-the-badge&logo=javascript&logoColor=black" />
+  <img align="center" src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
 </a>
 <a href="https://github.com/RubenGuerrero/rubenguerrero">
   <img align="center" src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB" />
 </a>
 <a href="https://github.com/RubenGuerrero/rubenguerrero">
-  <img align="center" src="https://img.shields.io/badge/redux%20-%23593d88.svg?&style=for-the-badge&logo=redux&logoColor=white" />
+  <img align="center" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 </a>
 <a href="https://github.com/RubenGuerrero/rubenguerrero">
   <img align="center" src="https://img.shields.io/badge/react_router%20-CA4245.svg?&style=for-the-badge&logo=react-router&logoColor=white" />
